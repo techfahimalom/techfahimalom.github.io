@@ -61,7 +61,7 @@ nav {
 .logo {
   font-weight: 800;
   font-size: 1.25rem;
-  color: #fff;
+  color: #5645e9;
   font-family: 'Fira Code', monospace;
 }
 
@@ -193,8 +193,8 @@ nav {
 }
 
 .avatar-wrapper {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
   overflow: hidden;
@@ -442,13 +442,134 @@ footer {
 }
 
 /* Responsive */
+/* ===================================================
+   Mobile & Responsive Adjustments
+   =================================================== */
+
+/* Tablet & Mobile Screens (Under 860px) */
 @media (max-width: 860px) {
+  /* Layout adjustments */
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Nav Links - Scrollable on small screens */
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 0.25rem;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  /* Hero Section */
   .hero {
     grid-template-columns: 1fr;
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 2rem;
+    gap: 2.5rem;
     text-align: center;
   }
-  .hero h1 { font-size: 2.25rem; }
-  .hero-cta { justify-content: center; }
-  .nav-links { display: none; }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero Card */
+  .hero-card {
+    padding: 1.5rem;
+  }
+
+  .avatar-wrapper {
+    width: 110px;
+    height: 110px;
+  }
+
+  /* Section Spacing & Headers */
+  section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  /* Grids */
+  .skills-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -2.1rem;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  /* Contact Box */
+  .contact-box {
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-box h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+  }
+}
+
+/* Extra Small Mobile (Under 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .stat-number {
+    font-size: 1.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+  }
 }
