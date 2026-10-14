@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techfahimalom.github.io/sitemap.xml
