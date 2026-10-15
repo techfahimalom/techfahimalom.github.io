@@ -57,6 +57,22 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Preconnect for Google Fonts (Speeds up DNS lookup) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Asynchronous Google Fonts Loading -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  </noscript>
+
+  <!-- Asynchronous Stylesheet Loading (Fixes Render-Blocking Requests) -->
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="style.css">
+  </noscript>
 </head>
 <body>
 
@@ -97,6 +113,7 @@
     <!-- Hero Card -->
     <div class="hero-card">
       <div class="avatar-wrapper">
+        
         <img src="fahim.jpg" alt="Md. Fahim Alom - Computer Network and Hardware Support Specialist" width="160" height="160" />
       </div>
       <h3 style="text-align: center; font-size: 1.3rem;">MD. FAHIM ALOM</h3>
