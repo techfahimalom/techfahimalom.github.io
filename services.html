@@ -23,16 +23,38 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Custom enhancements for the service cards grid and image banners */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-banner {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--card-border, rgba(255,255,255,0.1));
+    }
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (Services link removed) -->
   <nav>
     <div class="container nav-inner">
       <a href="https://techfahimalom.github.io/" class="logo">@techfahimalom</a>
       <ul class="nav-links">
         <li><a href="https://techfahimalom.github.io/">Home</a></li>
-        <li><a href="https://techfahimalom.github.io/services.html">Services</a></li>
         <li><a href="https://techfahimalom.github.io/#contact">Contact</a></li>
       </ul>
     </div>
@@ -55,66 +77,78 @@
     <!-- Services Grid Section -->
     <section id="services-list" style="padding-bottom: 4rem;">
       <div class="container">
-        <div class="skills-grid">
+        <div class="services-grid">
           
           <!-- Service 1: Computer Networking -->
           <div class="skill-card">
-            <div class="skill-icon">🌐</div>
-            <h3>Computer Networking & Setup</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
-              Robust local area network design, router configuration, switch management, and secure Wi-Fi deployment.
-            </p>
-            <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li>LAN/WAN Design & Implementation</li>
-              <li>Cisco Router & Switch Configuration</li>
-              <li>VLSM Subnetting & IP Addressing</li>
-              <li>T568B Structured Cabling & Termination</li>
-            </ul>
+            <div>
+              <Image src="image_generation_content/6877387706655917907" alt="Computer Networking & Setup Banner" class="service-banner" />
+              <div class="skill-icon">🌐</div>
+              <h3>Computer Networking & Setup</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Robust local area network design, router configuration, switch management, and secure Wi-Fi deployment.
+              </p>
+              <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>LAN/WAN Design & Implementation</li>
+                <li>Cisco Router & Switch Configuration</li>
+                <li>VLSM Subnetting & IP Addressing</li>
+                <li>T568B Structured Cabling & Termination</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Service 2: Hardware Servicing -->
           <div class="skill-card">
-            <div class="skill-icon">🛠️</div>
-            <h3>PC & Hardware Servicing</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
-              Comprehensive diagnostics, component-level testing, and performance recovery for desktop computers and laptops.
-            </p>
-            <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li>Motherboard & PSU Diagnostics</li>
-              <li>RAM, SSD & Component Upgrades</li>
-              <li>BIOS Recovery & Thermal Optimization</li>
-              <li>Operating System Deployment (Win/Linux)</li>
-            </ul>
+            <div>
+              <Image src="image_generation_content/17022537797373020483" alt="PC & Hardware Servicing Banner" class="service-banner" />
+              <div class="skill-icon">🛠️</div>
+              <h3>PC & Hardware Servicing</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Comprehensive diagnostics, component-level testing, and performance recovery for desktop computers and laptops.
+              </p>
+              <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>Motherboard & PSU Diagnostics</li>
+                <li>RAM, SSD & Component Upgrades</li>
+                <li>BIOS Recovery & Thermal Optimization</li>
+                <li>Operating System Deployment (Win/Linux)</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Service 3: Mobile Phone Servicing -->
           <div class="skill-card">
-            <div class="skill-icon">📱</div>
-            <h3>Mobile Phone Servicing</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
-              Safe hardware repair, software troubleshooting, and component replacement for smartphones and mobile devices.
-            </p>
-            <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li>Screen & Battery Replacements</li>
-              <li>Charging Port & Speaker Repair</li>
-              <li>Software Flashing & Bootloop Recovery</li>
-              <li>Network Unlocking & Diagnostic Checks</li>
-            </ul>
+            <div>
+              <Image src="image_generation_content/9085520118224466315" alt="Mobile Phone Servicing Banner" class="service-banner" />
+              <div class="skill-icon">📱</div>
+              <h3>Mobile Phone Servicing</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Safe hardware repair, software troubleshooting, and component replacement for smartphones and mobile devices.
+              </p>
+              <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>Screen & Battery Replacements</li>
+                <li>Charging Port & Speaker Repair</li>
+                <li>Software Flashing & Bootloop Recovery</li>
+                <li>Network Unlocking & Diagnostic Checks</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Service 4: Digital Marketing with AI -->
           <div class="skill-card">
-            <div class="skill-icon">🤖</div>
-            <h3>Digital Marketing with AI</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
-              Leveraging advanced artificial intelligence tools to scale online visibility, content creation, and local business outreach.
-            </p>
-            <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
-              <li>AI-Powered Content Strategy & Copywriting</li>
-              <li>Social Media Branding & Graphic Assets</li>
-              <li>SEO Optimization & Keyword Targeting</li>
-              <li>Automated Customer Engagement Setup</li>
-            </ul>
+            <div>
+              <Image src="image_generation_content/15774614501737805781" alt="Digital Marketing with AI Banner" class="service-banner" />
+              <div class="skill-icon">🤖</div>
+              <h3>Digital Marketing with AI</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Leveraging advanced artificial intelligence tools to scale online visibility, content creation, and local business outreach.
+              </p>
+              <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>AI-Powered Content Strategy & Copywriting</li>
+                <li>Social Media Branding & Graphic Assets</li>
+                <li>SEO Optimization & Keyword Targeting</li>
+                <li>Automated Customer Engagement Setup</li>
+              </ul>
+            </div>
           </div>
 
         </div>
